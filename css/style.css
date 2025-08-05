@@ -500,7 +500,7 @@ body {
   color: #fff;
 }
 
-.contact .row form .btn {
+.contact .row form .support-button {
   margin-top: 3rem;
   display: inline-block;
   padding: 1rem 3rem;
@@ -508,6 +508,11 @@ body {
   color: #fff;
   background-color: var(--primary);
   cursor: pointer;
+}
+
+.contact .row form .support-button.disabled {
+  background-color: #999;
+  cursor: not-allowed;
 }
 
 /* Footer */

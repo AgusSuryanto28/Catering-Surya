@@ -136,7 +136,7 @@
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui,
           incidunt!
         </p>
-        <a href="#" class="cta">Beli Sekarang</a>
+        <a href="#products" class="cta">Beli Sekarang</a>
       </main>
     </section>
     <!-- Hero section end -->
@@ -396,20 +396,32 @@
           class="map"
         ></iframe>
 
-        <form action="">
-          <div class="input-group">
+        <form action="" id="supportForm" onsubmit="sendMessage()">
+          <div class="input-group" id="name">
             <i data-feather="user"></i>
             <input type="text" placeholder="Nama" />
           </div>
-          <div class="input-group">
+          <div class="input-group" id="email">
             <i data-feather="mail"></i>
             <input type="text" placeholder="Email" />
           </div>
-          <div class="input-group">
+          <div class="input-group" id="no hp">
             <i data-feather="phone"></i>
-            <input type="text" placeholder="No HP" />
+            <input type="number" placeholder="No HP" />
           </div>
-          <button type="submit" class="btn">kirim pesan</button>
+          <div class="input-group" id="message">
+            <i data-feather="message-square"></i>
+            <input type="text" placeholder="Pesan" />
+          </div>
+          <!-- <button type="submit" class="btn">kirim pesan</button> -->
+          <button
+            class="support-button disabled"
+            type="submit"
+            id="support-button"
+            value="Kirim Pesan"
+          >
+            Kirim Pesan
+          </button>
         </form>
       </div>
     </section>
@@ -418,8 +430,10 @@
     <!-- Footer start -->
     <footer>
       <div class="socials">
-        <a href="#"><i data-feather="instagram"></i></a>
-        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="https://www.instagram.com/agus_sryntooo_/"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://x.com/AguzZz_28"><i data-feather="twitter"></i></a>
         <a href="#"><i data-feather="facebook"></i></a>
       </div>
 
@@ -427,6 +441,7 @@
         <a href="#home">Home</a>
         <a href="#about">Tentang kami</a>
         <a href="#menu">Menu</a>
+        <a href="#products">Produk</a>
         <a href="#contact">Kontak</a>
       </div>
 

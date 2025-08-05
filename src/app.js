@@ -68,7 +68,7 @@ document.addEventListener("alpine:init", () => {
   });
 });
 
-// Form Validation
+// Form Validation checkout
 const checkoutButton = document.querySelector(".checkout-button");
 checkoutButton.disabled = true;
 
@@ -99,19 +99,61 @@ checkoutButton.addEventListener("click", function (e) {
   );
 });
 
-// Format Pesan WhatsApp
-const formatMessage = (obj) => {
-  return `Data Customer
-    Nama: ${obj.name}
-    email: ${obj.email}
-    No HP: ${obj.phone}
-Data Pesanan
-  ${JSON.parse(obj.items).map(
-    (item) => `${item.name} (${item.quantity} x ${rupiah(item.total)}) \n`
-  )}
-TOTAL: ${rupiah(obj.total)}
-Terima Kasih.`;
-};
+// // Format Pesan WhatsApp checkout
+// const formatMessage = (obj) => {
+//   return `Data Customer
+//     Nama: ${obj.name}
+//     email: ${obj.email}
+//     No HP: ${obj.phone}
+// Data Pesanan
+//   ${JSON.parse(obj.items).map(
+//     (item) => `${item.name} (${item.quantity} x ${rupiah(item.total)}) \n`
+//   )}
+// TOTAL: ${rupiah(obj.total)}
+// Terima Kasih.`;
+// };
+
+// // Form Validation Support
+// const supportButton = document.querySelector(".support-button");
+// supportButton.disabled = true;
+
+// const formS = document.querySelector("#supportForm");
+
+// formS.addEventListener("keyup", function () {
+//   for (let i = 0; i < formS.elements.length; i++) {
+//     if (formS.elements[i].value.length !== 0) {
+//       supportButton.classList.remove("disabled");
+//       supportButton.classList.add("disabled");
+//     } else {
+//       return false;
+//     }
+//   }
+//   supportButton.disabled = false;
+//   supportButton.classList.remove("disabled");
+// });
+
+// // Form Pesan WhatsApp Support
+// supportButton.addEventListener("click", function (e) {
+//   e.preventDefault();
+//   function sendMessage() {
+//     const name = document.getElementById("name").value;
+//     const email = document.getElementById("email").value;
+//     const noHP = document.getElementById("No HP").value;
+//     const messageS = document.getElementById("message").value;
+
+//     const url = window.open(
+//       "https://api.whatsapp.com/send?phone=6281952423201&text=Hallo%20Admin%0ASaya%20%3A%20*" +
+//         name +
+//         "*%0AEmail%20Saya%20%3A%20*" +
+//         email +
+//         "*%0APhone%20Saya%20%3A%20*" +
+//         noHP +
+//         "*%0A%0ASaya%20Memiliki%20Pertanyaan%20%3A%0A*" +
+//         message +
+//         "*"
+//     );
+//   }
+// });
 
 // Konversi ke Rupiah
 const rupiah = (number) => {
