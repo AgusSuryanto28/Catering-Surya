@@ -1,11 +1,11 @@
 document.addEventListener("alpine:init", () => {
   Alpine.data("products", () => ({
     items: [
-      { id: 1, name: "Ayam Geprek", img: "Geprek.jpg", price: 25000 },
-      { id: 2, name: "Ayam Teriyaki", img: "Teriyaki.jpg", price: 30000 },
-      { id: 3, name: "Risol Mayo", img: "Risol.jpg", price: 15000 },
-      { id: 4, name: "Ayam Geprek", img: "Geprek.jpg", price: 25000 },
-      { id: 5, name: "Ayam Geprek", img: "Geprek.jpg", price: 25000 },
+      { id: 1, name: "Ayam Geprek", img: "Geprek.jpg", price: 30000 },
+      { id: 2, name: "Chiken Katsu", img: "Katsu.jpg", price: 30000 },
+      { id: 3, name: "Ayam Teriyaki", img: "Teriyaki.jpg", price: 30000 },
+      { id: 4, name: "Risol Mayo", img: "Risol.jpg", price: 15000 },
+      { id: 5, name: "Pudding", img: "Puding.jpg", price: 10000 },
     ],
   }));
 
