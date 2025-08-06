@@ -316,8 +316,7 @@
                 >
                   <use href="img/feather-sprite.svg#star" />
                 </svg>
-              </div>
-              <div class="product-stars">
+
                 <svg
                   width="24"
                   height="24"
@@ -329,8 +328,7 @@
                 >
                   <use href="img/feather-sprite.svg#star" />
                 </svg>
-              </div>
-              <div class="product-stars">
+
                 <svg
                   width="24"
                   height="24"
@@ -342,8 +340,7 @@
                 >
                   <use href="img/feather-sprite.svg#star" />
                 </svg>
-              </div>
-              <div class="product-stars">
+
                 <svg
                   width="24"
                   height="24"
@@ -355,8 +352,7 @@
                 >
                   <use href="img/feather-sprite.svg#star" />
                 </svg>
-              </div>
-              <div class="product-stars">
+
                 <svg
                   width="24"
                   height="24"
@@ -396,24 +392,24 @@
           class="map"
         ></iframe>
 
-        <form action="" id="supportForm" onsubmit="sendMessage()">
-          <div class="input-group" id="name">
+        <form action="" id="supportForm">
+          <div class="input-group">
             <i data-feather="user"></i>
-            <input type="text" placeholder="Nama" />
+            <input type="text" id="name" placeholder="Nama" />
           </div>
-          <div class="input-group" id="email">
+          <div class="input-group">
             <i data-feather="mail"></i>
-            <input type="text" placeholder="Email" />
+            <input type="text" id="email" placeholder="Email" />
           </div>
-          <div class="input-group" id="no hp">
+          <div class="input-group">
             <i data-feather="phone"></i>
-            <input type="number" placeholder="No HP" />
+            <input type="number" id="nomor" placeholder="Phone" />
           </div>
-          <div class="input-group" id="message">
+          <div class="input-group">
             <i data-feather="message-square"></i>
-            <input type="text" placeholder="Pesan" />
+            <input type="text" id="message" placeholder="Pesan" />
           </div>
-          <!-- <button type="submit" class="btn">kirim pesan</button> -->
+
           <button
             class="support-button disabled"
             type="submit"
@@ -481,6 +477,22 @@
       </div>
     </div>
     <!-- Modal Box Item Detail End -->
+
+    <!-- Script WA Support Start-->
+    <!-- <script>
+      function sendMessageToWhatsapp() {
+        let name = document.getElementById("name");
+        let email = document.getElementById("email");
+        let nomor = document.getElementById("nomor");
+        let message = document.getElementById("message");
+
+        console.log(name.value);
+        console.log(email.value);
+        console.log(nomor.value);
+        console.log(message.value);
+      }
+    </script> -->
+    <!-- Script WA Support End-->
 
     <!-- FEATHER ICONS -->
     <script>
