@@ -23,6 +23,9 @@
     <!-- FEATHER ICONS -->
     <script src="https://unpkg.com/feather-icons"></script>
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- MY STYLE -->
     <link rel="stylesheet" href="css/style.css" />
 
@@ -138,12 +141,12 @@
     <!-- Hero section start -->
     <section class="hero" id="home">
       <main class="content">
-        <h1>Tidak Ada Waktu? <span>Catering Aja</span></h1>
-        <p>
+        <h1 data-aos="fade-in">Tidak Ada Waktu? <span>Catering Aja</span></h1>
+        <p data-aos="fade-right">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui,
           incidunt!
         </p>
-        <a href="#products" class="cta">Beli Sekarang</a>
+        <a href="#products" class="cta" data-aos="zoom-in" data-aos-offset="300">Beli Sekarang</a>
       </main>
     </section>
     <!-- Hero section end -->
@@ -437,6 +440,10 @@
       feather.replace();
     </script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- My JavaScript -->
     <script src="js/script.js"></script>
   </body>
