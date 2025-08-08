@@ -276,6 +276,7 @@ body {
 .hero .content {
   padding: 1.4rem 7%;
   max-width: 60rem;
+  position: fixed;
 }
 
 .hero .content h1 {

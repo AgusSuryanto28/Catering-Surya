@@ -141,31 +141,56 @@
     <!-- Hero section start -->
     <section class="hero" id="home">
       <main class="content">
-        <h1 data-aos="fade-in">Tidak Ada Waktu? <span>Catering Aja</span></h1>
-        <p data-aos="fade-right">
+        <h1 data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000">
+          Tidak Ada Waktu? <span>Catering Aja</span>
+        </h1>
+
+        <p data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui,
           incidunt!
         </p>
-        <a href="#products" class="cta" data-aos="zoom-in" data-aos-offset="300">Beli Sekarang</a>
+        <a href="#products" class="cta">Beli Sekarang</a>
+        <!-- <a
+          href="#products"
+          class="cta"
+          data-aos="zoom-in"
+          data-aos-offset="300"
+          data-aos-delay="1000"
+          >Beli Sekarang</a
+        > -->
       </main>
     </section>
     <!-- Hero section end -->
 
     <!-- About Section Start -->
     <section id="about" class="about">
-      <h2><span>Tentang</span> Kami</h2>
+      <h2 data-aos="fade-down" data-aos-duration="1500">
+        <span>Tentang</span> Kami
+      </h2>
 
       <div class="row">
         <div class="about-img">
-          <img src="img/Tentang-Kami.jpg" alt="Tentang Kami" />
+          <img
+            src="img/Tentang-Kami.jpg"
+            alt="Tentang Kami"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          />
         </div>
         <div class="content">
-          <h3>Kenapa Memilih Catering Kami?</h3>
-          <p>
+          <h3 data-aos="fade-down" data-aos-duration="1000">
+            Kenapa Memilih Catering Kami?
+          </h3>
+          <p
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-delay="1000"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
             delectus aliquam repellendus esse, recusandae at.
           </p>
-          <p>
+          <p data-aos="fade-left" data-aos-duration="800" data-aos-delay="1200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
             labore tenetur maiores numquam adipisci repellendus atque inventore
             tempora culpa deserunt?
@@ -177,24 +202,36 @@
 
     <!-- Menu Section Start-->
     <section id="menu" class="menu">
-      <h2><span>Menu</span> Kami</h2>
-      <p>
+      <h2 data-aos="fade-down" data-aos-duration="1200">
+        <span>Menu</span> Kami
+      </h2>
+      <p data-aos="zoom-in" data-aos-duration="1500">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
         quae, fugiat tempore expedita fugit.
       </p>
 
       <div class="row">
-        <div class="menu-card">
+        <div class="menu-card" data-aos="zoom-in" data-aos-duration="1000">
           <img src="img/Menu/Geprek.jpg" alt="Geprek" class="menu-card-img" />
           <h3 class="menu-card-title">- Ayam Geprek -</h3>
           <p class="menu-card-price">IDR 30k</p>
         </div>
-        <div class="menu-card">
+        <div
+          class="menu-card"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+        >
           <img src="img/Menu/Katsu.jpg" alt="Katsu" class="menu-card-img" />
           <h3 class="menu-card-title">- Chiken Katsu -</h3>
           <p class="menu-card-price">IDR 30k</p>
         </div>
-        <div class="menu-card">
+        <div
+          class="menu-card"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="1000"
+        >
           <img
             src="img/Menu/Teriyaki.jpg"
             alt="Teriyaki"
@@ -203,12 +240,22 @@
           <h3 class="menu-card-title">- Ayam Teriyaki -</h3>
           <p class="menu-card-price">IDR 30k</p>
         </div>
-        <div class="menu-card">
+        <div
+          class="menu-card"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="1500"
+        >
           <img src="img/Menu/Risol.jpg" alt="Risol" class="menu-card-img" />
           <h3 class="menu-card-title">- Risol Mayo -</h3>
           <p class="menu-card-price">IDR 15k</p>
         </div>
-        <div class="menu-card">
+        <div
+          class="menu-card"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="2000"
+        >
           <img src="img/Menu/Puding.jpg" alt="Puding" class="menu-card-img" />
           <h3 class="menu-card-title">- Puding -</h3>
           <p class="menu-card-price">IDR 10k</p>
@@ -219,8 +266,10 @@
 
     <!-- Product Section Start -->
     <section class="products" id="products" x-data="products">
-      <h2><span>Produk Unggulan</span> Kami</h2>
-      <p>
+      <h2 data-aos="fade-down" data-aos-duration="1200">
+        <span>Produk Unggulan</span> Kami
+      </h2>
+      <p data-aos="zoom-in" data-aos-duration="1500">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
         voluptas saepe fugit tempore cupiditate dolorem?
       </p>
@@ -444,6 +493,15 @@
     <script>
       AOS.init();
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: 'bounce'});
+      gsap.from(".cta", { duration: 2.5, y: -250 , opacity: 0, delay: 0.6, ease: 'elastic.out'});
+    </script>
+
     <!-- My JavaScript -->
     <script src="js/script.js"></script>
   </body>
