@@ -401,11 +401,11 @@
         <form action="" id="supportForm">
           <div class="input-group">
             <i data-feather="user"></i>
-            <input type="text" id="name" placeholder="Nama" />
+            <input type="text" id="nick" placeholder="Nama" />
           </div>
           <div class="input-group">
             <i data-feather="mail"></i>
-            <input type="text" id="email" placeholder="Email" />
+            <input type="text" id="mail" placeholder="Email" />
           </div>
           <div class="input-group">
             <i data-feather="phone"></i>
@@ -498,8 +498,19 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
     <script>
       gsap.registerPlugin(TextPlugin);
-      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: 'bounce'});
-      gsap.from(".cta", { duration: 2.5, y: -250 , opacity: 0, delay: 0.6, ease: 'elastic.out'});
+      gsap.from(".navbar", {
+        duration: 1.5,
+        y: "-100%",
+        opacity: 0,
+        ease: "bounce",
+      });
+      gsap.from(".cta", {
+        duration: 2.5,
+        y: -250,
+        opacity: 0,
+        delay: 0.6,
+        ease: "elastic.out",
+      });
     </script>
 
     <!-- My JavaScript -->

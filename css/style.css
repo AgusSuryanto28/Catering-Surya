@@ -136,6 +136,7 @@ body {
 }
 
 .shopping-cart {
+  overflow: auto;
   position: absolute;
   top: 100%;
   right: -100%;

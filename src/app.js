@@ -135,18 +135,18 @@ formS.addEventListener("keyup", function () {
 // kirim Customer Service
 supportButton.addEventListener("click", function (e) {
   e.preventDefault();
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
+  const nick = document.getElementById("nick").value;
+  const mail = document.getElementById("mail").value;
   const nomor = document.getElementById("nomor").value;
   const message = document.getElementById("message").value;
 
   const encodedText =
     "Hallo Admin%0A" +
     "Nama: *" +
-    encodeURIComponent(name) +
+    encodeURIComponent(nick) +
     "*%0A" +
     "Email: *" +
-    encodeURIComponent(email) +
+    encodeURIComponent(mail) +
     "*%0A" +
     "Phone: *" +
     encodeURIComponent(nomor) +
